@@ -19,10 +19,6 @@ from tqdm import tqdm
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-import os
-from rq import Worker, Queue, Connection
-from worker import conn
-from utils import get_closest_utils
 from scrapingbee import ScrapingBeeClient
 
 
