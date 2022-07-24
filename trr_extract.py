@@ -61,7 +61,6 @@ def get_closest_utils(name):
     )
 
     r_text = str(response.content)
-    print(r_text)
     containers = r_text.split('><a class="product-card js-plp-product-card " data-container-number=""')[1:]
     images = [val.split('src="')[1].split('" srcset')[0] for val in containers]
     brands = [val.split('product-card__brand">')[-1].split('</div')[0] for val in containers]
